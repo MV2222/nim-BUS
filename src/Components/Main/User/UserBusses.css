@@ -1,0 +1,280 @@
+.loading-screen-container {
+  margin: 0 auto;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-screen-animation {
+  margin: 0 auto;
+  width: 7%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.load {
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 100%;
+
+  animation: loading 1s infinite ease-in-out;
+}
+.load2 {
+  animation-delay: 0.1s;
+}
+.load3 {
+  animation-delay: 0.2s;
+}
+.load4 {
+  animation-delay: 0.3s;
+}
+.load5 {
+  animation-delay: 0.4s;
+}
+
+@keyframes loading {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2.4rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.loading-screen-text {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* ******************************************************************* */
+
+.user-busses-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 5.6rem;
+}
+
+.user-busses-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.user-busses-carousel-heading {
+  font-size: 3.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.user-busses-carousel-btn {
+  height: 4.8rem;
+  width: 4.8rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: white;
+
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.25);
+
+  align-self: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: all 0.4s ease-in-out;
+}
+.user-busses-carousel-btn:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.25);
+  color: black;
+}
+.user-busses-carousel-btn > * {
+  transition: all 0.4s ease-in-out;
+}
+.user-busses-carousel-btn-top:hover > * {
+  transform: translateY(-25%);
+}
+.user-busses-carousel-btn-bottom:hover > * {
+  transform: translateY(25%);
+}
+
+.user-busses-carousel-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.8rem;
+
+  padding: 3.6rem;
+
+  border-radius: 2.4rem;
+
+  background-image: linear-gradient(#5296a1, #4393a2);
+  filter: drop-shadow(0 0 25px #44444493);
+  backdrop-filter: blur(0.25em);
+}
+
+.bus-data-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.bus-data-container {
+  font-size: 2rem;
+}
+
+.bus-data-route {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.user-busses-carousel-data .btn-book-ticket {
+  color: white !important;
+  margin-top: 1.2rem;
+
+  transition: all 0.4s ease-in-out;
+}
+.user-busses-carousel-data .btn-book-ticket:hover {
+  color: black !important;
+}
+.btn-book-ticket::after {
+  content: "🚌";
+  visibility: hidden;
+  opacity: 0;
+  padding-left: 0.8rem;
+  width: 0;
+
+  display: inline-block;
+
+  transition: all 0.4s ease-in-out;
+  transform: translateX(2.4rem);
+}
+
+.btn-book-ticket:hover::after {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+  width: auto;
+}
+
+.number-of-seats-booked {
+  width: 55%;
+  font-size: 2rem;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.number-of-seats-booked-button-container {
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.number-of-seats-booked-button {
+  background-color: rgba(255, 255, 255, 0.6);
+  height: 2.4rem;
+  width: 2.4rem;
+  border-radius: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: all 0.4s;
+}
+.number-of-seats-booked-button:hover {
+  background-color: rgba(255, 255, 255) !important;
+  cursor: pointer;
+}
+
+.book-tickets-btn-container {
+  width: 85%;
+  margin-top: 1.2rem;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.user-busses-carousel-data .btn-confirm-tickets {
+  color: white !important;
+
+  transition: all 0.4s ease-in-out;
+}
+.user-busses-carousel-data .btn-confirm-tickets:hover {
+  color: black !important;
+}
+.btn-confirm-tickets::after {
+  content: "✔️";
+  visibility: hidden;
+  opacity: 0;
+  padding-left: 0.8rem;
+  width: 0;
+
+  display: inline-block;
+
+  transition: all 0.4s ease-in-out;
+  transform: translateX(-2.4rem);
+}
+
+.btn-confirm-tickets:hover::after {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+  width: auto;
+}
+
+.user-busses-carousel-data .btn-go-back {
+  color: white !important;
+
+  transition: all 0.4s ease-in-out;
+}
+.user-busses-carousel-data .btn-go-back:hover {
+  color: black !important;
+}
+.btn-go-back::after {
+  content: "❌";
+  visibility: hidden;
+  opacity: 0;
+  padding-left: 0.8rem;
+  width: 0;
+
+  display: inline-block;
+
+  transition: all 0.4s ease-in-out;
+  transform: translateX(-2.4rem);
+}
+
+.btn-go-back:hover::after {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+  width: auto;
+}

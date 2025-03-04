@@ -1,0 +1,48 @@
+.intro-container {
+  color: black;
+  width: 35vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.heading-primary {
+  font-size: 4.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.heading-secondary {
+  font-size: 2.4rem;
+  display: inline-block;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+
+  animation: text-animation 2s ease-in-out;
+}
+.feature-2 {
+  animation-delay: 1s;
+}
+.feature-3 {
+  animation-delay: 2s;
+}
+
+.heading-tertiary {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+@keyframes text-animation {
+  0%,
+  100% {
+    transform: translate(0);
+  }
+  50% {
+    font-weight: 600;
+    font-size: 3.6rem;
+    transform: translate(2.4rem);
+  }
+}

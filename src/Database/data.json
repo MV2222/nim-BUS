@@ -1,0 +1,156 @@
+{
+  "Admins": [
+    {
+      "id": "3a35",
+      "adminName": "Mahadev Prasad Pal",
+      "email": "mahadevprasadpal99@gmail.com",
+      "phone": "07894075323",
+      "password": "123456"
+    },
+    {
+      "id": "245c",
+      "adminName": "Mahadev Prasad Pal",
+      "email": "mahadevprasadpal99@gmail.com",
+      "phone": "07894075323",
+      "password": "123456789"
+    },
+    {
+      "id": "4c08",
+      "adminName": "mv",
+      "email": "mahadevprasadpal99@gmail.com",
+      "phone": "07894075323",
+      "password": "2222"
+    },
+    {
+      "id": "e3c7",
+      "adminName": "mv",
+      "email": "mahadevpal99@gmail.com",
+      "phone": "07894075323",
+      "password": "123"
+    }
+  ],
+  "Users": [
+    {
+      "id": "87ed",
+      "userName": "Mahadev Prasad Pal",
+      "email": "mahadevpal99@gmail.com",
+      "phone": "7894075323",
+      "password": "123456789"
+    },
+    {
+      "id": "4c37",
+      "userName": "Mahadev Prasad Pal",
+      "email": "mahadevpal99@gmail.com",
+      "phone": "7894075323",
+      "password": "123456789"
+    },
+    {
+      "id": "9e81",
+      "userName": "MahadeV2222",
+      "email": "mahadevpal99@gmail.com",
+      "phone": "7894075323",
+      "password": "789407"
+    },
+    {
+      "id": "6fc1",
+      "userName": "mv",
+      "email": "mv@gmail.com",
+      "phone": "7894075323",
+      "password": "123"
+    },
+    {
+      "id": "68e5",
+      "userName": "Mahadev Prasad Pal",
+      "email": "mahadevpal99@gmail.com",
+      "phone": "7894075323",
+      "password": "7873"
+    },
+    {
+      "id": "06cd",
+      "userName": "Mahadev Prasad Pal",
+      "email": "prasadmahadev22@gmail.com",
+      "phone": "7894075323",
+      "password": "7873245428"
+    }
+  ],
+  "Added_Busses": [
+    {
+      "id": "7c12",
+      "busImage": "https://pngimg.com/d/bus_PNG101194.png",
+      "busName": "Mahaveer",
+      "busNumber": "OD 06 M 0610",
+      "numberOfSeats": "50",
+      "busFrom": "Dhenkanal",
+      "busTo": "Bhubaneswar",
+      "busArrival": "10:45",
+      "busDeparture": "11:00"
+    },
+    {
+      "id": "9a7d",
+      "busImage": "https://www.pngall.com/wp-content/uploads/5/Tour-Bus-PNG-Image-File.png",
+      "busName": "Rudra",
+      "busNumber": "OD 06 R 1402",
+      "numberOfSeats": "52",
+      "busFrom": "Dhenkanal",
+      "busTo": "Puri",
+      "busArrival": "06:20",
+      "busDeparture": "06:30"
+    },
+    {
+      "id": "e33f",
+      "busImage": "https://wallpapers.com/images/hd/luxury-coach-bus-png-hbj-y4ipm4njy39c8v5h.jpg",
+      "busName": "Ashutosh",
+      "busNumber": "OD 06 A 1404",
+      "numberOfSeats": "56",
+      "busFrom": "Dhenkanal",
+      "busTo": "Keonjhar",
+      "busArrival": "05:45",
+      "busDeparture": "06:00"
+    },
+    {
+      "id": "09f3",
+      "busImage": "https://freepngimg.com/save/20769-coach-bus/1357x800",
+      "busName": "Suresh",
+      "busNumber": "OD 05 S 2807",
+      "numberOfSeats": "44",
+      "busFrom": "Cuttack",
+      "busTo": "Dhenkanal",
+      "busArrival": "12:15",
+      "busDeparture": "12:30"
+    },
+    {
+      "id": "f9c2",
+      "busImage": "https://freepngimg.com/thumb/bus/27-city-bus-png-image.png",
+      "busName": "Dibya",
+      "busNumber": "OD 02 D 1485",
+      "numberOfSeats": "40",
+      "busFrom": "Bhubaneswar",
+      "busTo": "Malkangiri",
+      "busArrival": "11:15",
+      "busDeparture": "11:40"
+    },
+    {
+      "id": "e052",
+      "busImage": "https://pngimg.com/d/bus_PNG101207.png",
+      "busName": "MahadeV",
+      "busNumber": "OD 06 MV 2222",
+      "numberOfSeats": "40",
+      "busFrom": "Dhenkanal",
+      "busTo": "Koraput",
+      "busArrival": "05:25",
+      "busDeparture": "06:00"
+    },
+    {
+      "id": "1a4a",
+      "busImage": "https://pngimg.com/d/bus_PNG101205.png",
+      "busName": "Vicky",
+      "busNumber": "OD 02 V 9522",
+      "numberOfSeats": "48",
+      "busFrom": "Bhubaneswar",
+      "busTo": "Baripada",
+      "busArrival": "21:00",
+      "busDeparture": "21:20"
+    }
+  ],
+  "Booked_Tickets": []
+}

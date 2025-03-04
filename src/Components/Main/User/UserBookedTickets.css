@@ -1,0 +1,166 @@
+.loading-screen-container {
+  margin: 0 auto;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.loading-screen-animation {
+  margin: 0 auto;
+  width: 7%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.load {
+  height: 1.5rem;
+  width: 1.5rem;
+  /* background-color: rgba(255, 255, 255, 0.75); */
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 100%;
+
+  animation: loading 1s infinite ease-in-out;
+}
+.load2 {
+  animation-delay: 0.1s;
+}
+.load3 {
+  animation-delay: 0.2s;
+}
+.load4 {
+  animation-delay: 0.3s;
+}
+.load5 {
+  animation-delay: 0.4s;
+}
+
+@keyframes loading {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2.4rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.loading-screen-text {
+  /* color: rgba(255, 255, 255, 0.75); */
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* ************************************ */
+.no-user-booked-tickets-container {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(../../../Assets/NoTicketsFound.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.no-user-booked-tickets-heading {
+  font-weight: 600;
+  font-size: 5.6rem;
+}
+
+/* ************************************ */
+.user-booked-tickets-card-container {
+  height: 75%;
+  width: 75%;
+  transform: translateY(20%);
+  padding: 3.6rem;
+
+  overflow-y: scroll;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+.user-booked-tickets-card-container::-webkit-scrollbar {
+  display: none;
+}
+
+.user-booked-tickets-card-frame {
+  width: 65%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.8rem;
+
+  padding: 1.2rem 2.4rem;
+
+  border-radius: 1.2rem;
+
+  background-image: linear-gradient(
+    rgb(44, 150, 222, 0.9),
+    rgb(44, 150, 202, 0.75)
+  );
+  filter: drop-shadow(0 0 5px rgb(50, 59, 63));
+  backdrop-filter: blur(0.25em);
+}
+
+.user-booked-tickets-card-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.user-booked-tickets-card-img {
+  height: 10rem;
+  width: 10rem;
+}
+
+.user-booked-tickets-card-data {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.4rem;
+
+  font-size: 2rem;
+}
+
+.tickets-booked {
+  background-color: rgba(214, 221, 224, 0.5);
+  font-size: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 0.8rem 1.2rem;
+  border-radius: 1.2rem;
+}
+
+.tickets-booked-number {
+  font-size: 6.4rem;
+}
+
+.cancel-ticket {
+  background-color: rgb(218, 60, 60) !important;
+  transition: all 0.4s ease-in-out;
+}
+.cancel-ticket:hover {
+  color: white !important;
+  background-color: rgb(190, 10, 10) !important ;
+}

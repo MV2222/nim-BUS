@@ -1,0 +1,75 @@
+.admin-dashboard-container {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+}
+
+.admin-dashboard-table-container {
+  flex-grow: 1;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+.admin-dashboard-table {
+  width: 100%;
+
+  font-size: 1.6rem;
+  color: white;
+  border-collapse: collapse;
+}
+
+.admin-dashboard-table thead {
+  position: sticky;
+  top: 0;
+
+  z-index: 10;
+}
+
+.admin-dashboard-table-heading th {
+  font-size: 1.8rem;
+
+  padding: 1.2rem 0.8rem;
+  background-color: white;
+  color: black;
+}
+
+.admin-dashboard-table-body {
+  background-image: linear-gradient(
+    rgb(224, 170, 150, 0.75),
+    rgb(224, 170, 150, 0.5)
+  );
+  filter: drop-shadow(0 0 5px rgb(224, 170, 150, 0.5));
+  backdrop-filter: blur(0.25em);
+}
+
+/* BUTTONS */
+.btn-view-bus {
+  background-color: rgb(23, 199, 199) !important ;
+  transition: all 0.4s ease-in-out;
+}
+.btn-view-bus:hover {
+  color: white !important;
+  background-color: rgb(2, 114, 114) !important ;
+}
+
+.btn-edit-bus {
+  background-color: rgb(18, 170, 18) !important;
+  transition: all 0.4s ease-in-out;
+}
+.btn-edit-bus:hover {
+  color: white !important;
+  background-color: rgb(3, 104, 3) !important ;
+}
+
+.btn-delete-bus {
+  background-color: rgb(218, 60, 60) !important;
+  transition: all 0.4s ease-in-out;
+}
+.btn-delete-bus:hover {
+  color: white !important;
+  background-color: rgb(190, 10, 10) !important ;
+}

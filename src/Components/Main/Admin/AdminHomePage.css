@@ -1,0 +1,82 @@
+/* GENERAL */
+.btn {
+  color: black !important;
+  font-weight: 600;
+  background: #ffffff50;
+  outline: none;
+  border: none;
+
+  transition: all 0.4s ease-in-out;
+}
+.btn:hover {
+  outline: none;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.admin-active-btn {
+  background-color: #cf6f4c !important;
+  box-shadow: 0 2.5px 5px #92644d;
+}
+
+/* ---------------------------------------------- */
+.admin-home-page-container {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+
+  overflow-y: hidden;
+
+  background-image: url(../../../Assets/AdminSignUp.avif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.admin-sidebar-container {
+  width: 12%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  background-image: linear-gradient(
+    rgb(224, 170, 150, 0.75),
+    rgb(224, 170, 150, 0.75)
+  );
+  filter: drop-shadow(0 0 5px rgba(119, 79, 64, 0.5));
+  backdrop-filter: blur(0.15rem);
+}
+
+.admin-sidebar-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.admin-logo-container {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 100%;
+
+  background-image: url("../../../Assets/AdminAvatar.avif");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.admin-sidebar-container .btn-logout-admin {
+  background-color: red !important;
+  color: white !important;
+
+  transition: all 0.4s ease-in-out;
+}
+.btn-logout-admin:hover {
+  background-color: rgb(155, 0, 0) !important;
+}
+
+.admin-sidebar-content {
+  width: 88%;
+}
