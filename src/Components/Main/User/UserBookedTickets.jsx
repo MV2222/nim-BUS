@@ -10,29 +10,32 @@ function UserBookedTickets() {
 
   useEffect(() => {
     const ticketsFetcher = async () => {
-      await axios
-        .get("http://localhost:2222/Booked_Tickets")
-        .then((res) => {
-          setTimeout(() => {
-            setTicketsData(res.data);
-            setIsLoading(false);
-          }, 1500);
-        })
-        .catch((err) => console.error(err));
+      try {
+        const res = await axios.get("http://localhost:2222/Booked_Tickets");
+        setTimeout(() => {
+          setTicketsData(res.data);
+          setIsLoading(false);
+        }, 1500);
+      } catch (err) {
+        console.error(err);
+      }
     };
     ticketsFetcher();
-  }, [ticketsData]);
+  }, []);
 
   const cancelTicketHandler = async (id) => {
-    await axios
-      .delete(`http://localhost:2222/Booked_Tickets/${id}`)
-      .then((res) => {
-        toast.error("Ticket cancelled", {
-          autoClose: 1500,
-          toastId: "cancel-ticket",
-        });
-      })
-      .catch((err) => console.error(err));
+    try {
+      await axios.delete(`http://localhost:2222/Booked_Tickets/${id}`);
+      toast.error("Ticket cancelled", {
+        autoClose: 1500,
+        toastId: "cancel-ticket",
+      });
+
+      const res = await axios.get("http://localhost:2222/Booked_Tickets");
+      setTicketsData(res.data);
+    } catch (err) {
+      console.error(err);
+    }
   };
 
   if (isLoading) {
